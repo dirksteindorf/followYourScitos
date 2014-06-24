@@ -1,0 +1,7 @@
+<root>
+    <include file="${findpkg SCITOSConfigs}/etc/SCITOS-Pilot.xml"/>
+    
+    <!--<unit id="doubleKukaParking" class="kukaParking::doubleKukaParking" />-->
+    <!--<unit id="singleKukaParking" class="kukaParking::singleKukaParking" />-->
+    <unit id="kukaController" class="kukaParking::kukaRemoteController" />
+</root>

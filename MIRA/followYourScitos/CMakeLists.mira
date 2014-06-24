@@ -1,0 +1,16 @@
+
+message(STATUS "Detecting MIRA root directory")
+include(FindMIRARoot.cmake)
+
+##############################################################################
+# Enable CTest framework
+
+ENABLE_TESTING()
+INCLUDE(CTest)
+
+##############################################################################
+
+set(CMAKE_MODULE_PATH ${MIRA_ROOT_DIR}/make)
+
+include(Prerequisites)
+include(Dependencies)
