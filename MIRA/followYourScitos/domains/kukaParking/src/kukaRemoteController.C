@@ -52,10 +52,6 @@
 #include "gamepad.h"
 #include "gamepadEvent.h"
 
-#define SPEED_STEP 0.1f
-#define MAX_SPEED 1.0f
-#define MIN_SPEED 0.1f
-
 using namespace mira;
 
 namespace kukaParking { 
@@ -101,7 +97,10 @@ private:
     bool isDrivingAllowed;
     float transformSpeed;
     float rotationSpeed;
-    float maxSpeed;
+
+    static constexpr float SPEED_STEP = 0.1f;
+    static constexpr float MAX_SPEED = 1.0f;
+    static constexpr float MIN_SPEED = 0.1f;
 };
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -171,25 +170,23 @@ void kukaRemoteController::process(const Timer& timer)
     
         //---------------------------------------------------------------------
         // color buttons 
-        if(gamepadEvent.isButtonPressed(BUTTON_A))
+        if(gamepadEvent.isButtonPressed(BUTTON_X))
         {
             scitosToKuka1.post(followMe);
         }
-        if(gamepadEvent.isButtonPressed(BUTTON_B)) 
+        if(gamepadEvent.isButtonPressed(BUTTON_Y)) 
         {
             scitosToKuka1.post(stopFollowing);
         }
 
-        if(gamepadEvent.isButtonPressed(BUTTON_X))
+        if(gamepadEvent.isButtonPressed(BUTTON_A))
         {
-            //system("festival --tts /localhome/demo/Documents/test.txt");
             transformSpeed = 0.0f;
             rotationSpeed = 0.0f;
         }
 
-        if(gamepadEvent.isButtonPressed(BUTTON_Y))
+        if(gamepadEvent.isButtonPressed(BUTTON_B))
         {
-            //system("festival --tts /localhome/demo/Documents/test.txt");
             transformSpeed = 0.0f;
             rotationSpeed = 0.0f;
         }
