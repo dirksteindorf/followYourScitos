@@ -153,4 +153,99 @@ For one youBot (autonomous or not) start only one:
 
     python ~/followYourScitos/ROS/helper_scripts/pseudoKuka1.py
     
+The following table shows the function of each button on the Gamepad (Logitech F710).
 
+<table>
+    <tr>
+        <td>Button</td>
+        <td>Function</td>
+    </tr>
+
+    <tr>
+        <td>A</td>
+        <td>set velocity to 0</td>
+    </tr>
+
+    <tr>
+        <td>B</td>
+        <td>set velocity to 0</td>
+    </tr>
+
+    <tr>
+        <td>X</td>
+        <td>tell the youBot to start following</td>
+    </tr>
+
+    <tr>
+        <td>Y</td>
+        <td>tell the youBot to stop following</td>
+    </tr>
+
+    <tr>
+        <td>LB</td>
+        <td>twinkle left</td>
+    </tr>
+
+    <tr>
+        <td>RB</td>
+        <td>twinkle right</td>
+    </tr>
+
+    <tr>
+        <td>LT</td>
+        <td>minimal speed</td>
+    </tr>
+
+    <tr>
+        <td>RT</td>
+        <td>maximal speed (can be configured in MIRA Center)</td>
+    </tr>
+
+    <tr>
+        <td>Start</td>
+        <td>enable/disable driving mode</td>
+    </tr>
+
+    <tr>
+        <td>Back</td>
+        <td>emergency stop (active braking) and lock driving mode,<br />
+        unlock with Start</td>
+    </tr>
+
+    <tr>
+        <td>Mode</td>
+        <td>switches D-Pad and left stick<br />
+            don't press it, it's really annoying</td>
+    </tr>
+
+    <tr>
+        <td>Vibration</td>
+        <td>has no effect on the robot, he just doesn't care</td>
+    </tr>
+
+    <tr>
+        <td>D-Pad up</td>
+        <td>increase velocity by 0.1 m/s</td>
+    </tr>
+
+    <tr>
+        <td>D-Pad down</td>
+        <td>decrease velocity by 0.1 m/s,<br />
+            drive backwards</td>
+    </tr>
+
+    <tr>
+        <td>D-Pad left</td>
+        <td>increase counter clockwise rotation by 0.1 rad/s</td>
+    </tr>
+
+    <tr>
+        <td>D-Pad right</td>
+        <td>increase clockwise rotation by 0.1 rad/s</td>
+    </tr>
+
+    <tr>
+        <td>Left stick</td>
+        <td>orientation of the head (90° steps)</td>
+    </tr>
+</table>
