@@ -67,8 +67,8 @@ be adjusted, as well as the last line in `~/followYourScitos/MIRA/followYourScit
 
 The following lines have to be added to the `~/.bashrc`:
 
-    export MIRA_PATH=$MIRA_PATH:/home/demo/followYourScitos
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/demo/followYourScitos/lib
+    export MIRA_PATH=$MIRA_PATH:/localhome/demo/followYourScitos
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/localhome/demo/followYourScitos/lib
 
 The file now needs to be sourced:
 
@@ -96,7 +96,7 @@ and the G5 use Ubuntu, Python is already installed and only ROS is missing.
 In order to compile the Adapter the following lines have to be added to the `~/.bashrc`
 
     source /opt/ros/hydro/setup.bash
-    export ROS_PACKAGE_PATH=/home/demo/followYourScitos/Adapter:$ROS_PACKAGE_PATH  
+    export ROS_PACKAGE_PATH=/localhome/demo/followYourScitos/Adapter:$ROS_PACKAGE_PATH  
 
 Both the ROS scripts and the Adapter need to know where the ROS master is running. 
 For example, add this to `~/.bashrc` and replace the `127.0.0.1` by the IP of the 
